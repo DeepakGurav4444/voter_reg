@@ -1,0 +1,1 @@
+enum VoterAction { edit, add }

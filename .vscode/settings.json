@@ -1,0 +1,7 @@
+{
+    "bloc.newBlocTemplate.useSealedClasses": false,
+    "bloc.newCubitTemplate.useSealedClasses": true,
+    "bloc.newBlocTemplate.type": "equatable",
+    "bloc.newBlocTemplate.createDirectory": true,
+    "bloc.newCubitTemplate.createDirectory": false
+}
