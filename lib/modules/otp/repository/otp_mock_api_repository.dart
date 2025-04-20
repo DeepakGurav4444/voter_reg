@@ -38,8 +38,9 @@ class OTPMockApiRepository implements OTPApiRepository {
   Future<OTPResponseModel?> verifyOTP(Map<String, String> body) async {
     await Future.delayed(Duration(seconds: 2));
     var responseData = {
-      "data": 1,
-      "message": "OTP verified successfully.",
+      "data": body["otp"] == "1234" ? 1 : 0,
+      "message":
+          body["otp"] == "1234" ? "OTP verified successfully." : "Invalid OTP.",
       "validationMessages": [""],
       "isSuccessful": true,
       "isBusinessError": false,
